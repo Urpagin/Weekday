@@ -6,6 +6,6 @@ A simple implementation of the Zeller's Conguence Theorem written in Python.
 
 Use a python interpreter on `main.py`.
 
-```python
-python main.py
+```bash
+git clone https://github.com/Urpagin/Weekday/ && cd Weekday && python main.py
 ```
