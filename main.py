@@ -97,6 +97,8 @@ def weekday_to_string(weekday: Weekday) -> str:
 def date_to_weekday(date: Date) -> Weekday:
     """
     Parses a `Date` into a `Weekday` using Zeller's congruence formula.
+
+    Credit: https://en.wikipedia.org/wiki/Zeller%27s_congruence
     """
 
     d: int = date.day
