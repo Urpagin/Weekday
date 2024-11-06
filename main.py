@@ -23,7 +23,7 @@ def main() -> None:
 
 @dataclass
 class Date:
-    """Represents a safe date."""
+    """Represents a safe date. Safe as in the date is parsed and checked"""
 
     day: int
     month: int
@@ -77,7 +77,7 @@ def read_user_date() -> Date:
 
 
 class Weekday(Enum):
-    """Represent a Weekday"""
+    """Represents a Weekday"""
 
     SUNDAY = 0
     MONDAY = 1
@@ -89,8 +89,7 @@ class Weekday(Enum):
 
 
 def weekday_to_string(weekday: Weekday) -> str:
-    """Converts a Weekday enum member to its string representation."""
-
+    """Converts a Weekday enum member to its string capitalized representation."""
     return weekday.name.title()
 
 
